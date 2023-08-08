@@ -1,0 +1,209 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 19%);
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    width: 17ch;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(234, 78%, 67%);
+    font-size: .8rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.member-card {
+    width: 590px;
+    background-color: hsl(233, 26%, 25%);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 25px hsla(233, 26%, 10%, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.member-card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-icon {
+    background-color: hsl(0, 0%, 100%);
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    color: #2F3450;
+}
+
+.btn-icon:hover {
+    background-color: hsl(234, 78%, 87%);
+    box-shadow: 0 0 5px hsl(234, 78%, 87%);
+    color: hsl(234, 29%, 19%);
+    cursor: pointer;
+}
+
+.btn-text-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-text-icon:hover {
+    color: hsl(234, 78%, 67%);
+    cursor: pointer;
+}
+
+.btn-add {
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid hsla(0, 0%, 100%, 20%);
+    opacity: 20%;
+    transition: opacity .3s ease;
+}
+
+.btn-add:hover {
+    background-color: hsl(233, 26%, 30%);
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.member-card__people {
+    background-color: hsl(233, 29%, 22%);
+    border: hsla(0, 0%, 100%, 20%) 1px solid;
+    border-radius: 50px;
+    display: flex;
+    gap: .5rem;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+.member-card__people__item {
+    background-color: hsl(233, 26%, 30%);
+    border: hsla(0, 0%, 100%, 20%) 1px solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 10px 3px 3px;
+}
+
+.member-card__people__item > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center -5px;
+}
+
+.check-box-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.checkbox-container .label {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsla(0, 0%, 100%, 20%);
+  display: inline-block;
+  border-radius: 3px;
+  background-color: hsl(233, 29%, 22%);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png);
+  background-position: center;
+  background-size: 0%;
+  background-repeat: no-repeat;
+  transition: background-size .2s ease;
+}
+
+.checkbox-container:hover .checkmark {
+    background-color: hsla(0, 0%, 100%, 10%);
+}
+
+.checkbox-container input:checked + .checkmark {
+  background-size: 60%;
+  transition: background-size .2s ease;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+label {
+    font-size: .8rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: hsl(233, 29%, 22%);
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-send {
+    background-color: hsl(234, 78%, 67%);
+    margin-left: 15px;
+}
+
+.btn-send:hover {
+    background-color: hsl(234, 78%, 87%);
+    box-shadow: 0 0 5px hsl(234, 78%, 87%);
+    color: hsl(234, 29%, 19%);
+}
+
+.btn-cancel:hover {
+    background-color: hsl(234, 78%, 87%);
+    box-shadow: 0 0 5px hsl(234, 78%, 87%);
+    color: hsl(234, 29%, 19%);
+}
